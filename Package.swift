@@ -66,7 +66,7 @@ let package = Package(
             dependencies: [
                 "CryptoSwift",
                 "Fuzi",
-                "ReadiumGCDWebServer",
+                .product(name: "ReadiumGCDWebServer", package: "GCDWebServer"),
                 "Zip",
                 "R2Shared",
             ],
@@ -151,7 +151,7 @@ let package = Package(
         .target(
             name: "ReadiumAdapterGCDWebServer",
             dependencies: [
-                "ReadiumGCDWebServer",
+                .product(name: "ReadiumGCDWebServer", package: "GCDWebServer"),
                 "R2Shared",
             ],
             path: "Sources/Adapters/GCDWebServer"
