@@ -4,7 +4,29 @@ All notable changes to this project will be documented in this file. Take a look
 
 **Warning:** Features marked as *alpha* may change or be removed in a future release without notice. Use with caution.
 
-<!-- ## [Unreleased] -->
+## [Unreleased]
+
+### Added
+
+#### Navigator
+
+* The `AudioNavigator` API has been promoted to stable and ships with a new Preferences API.
+
+### Fixed
+
+* [#390](https://github.com/readium/swift-toolkit/issues/390) Fixed logger not logging above the minimum severity level (contributed by [@ettore](https://github.com/readium/swift-toolkit/pull/391)).
+
+#### Navigator
+
+* From iOS 13 to 15, PDF text selection is disabled on protected publications disabling the **Copy** editing action.
+* The **Share** editing action is disabled for any protected publication.
+* Fixed starting the TTS from the current EPUB position.
+* [#396](https://github.com/readium/swift-toolkit/issues/396) Ensure we stop the activity indicator when an EPUB resource fails to load correctly (contributed by [@ettore](https://github.com/readium/swift-toolkit/pull/397)).
+
+#### Streamer
+
+* [#399](https://github.com/readium/swift-toolkit/discussions/399) Zipped Audio Books and standalone audio files are now recognized.
+
 
 ## [2.6.1]
 

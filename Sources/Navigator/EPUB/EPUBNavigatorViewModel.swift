@@ -1,5 +1,5 @@
 //
-//  Copyright 2023 Readium Foundation. All rights reserved.
+//  Copyright 2024 Readium Foundation. All rights reserved.
 //  Use of this source code is governed by the BSD-style license
 //  available in the top-level LICENSE file of the project.
 //
@@ -159,7 +159,7 @@ final class EPUBNavigatorViewModel: Loggable {
         self.config = config
         editingActions = EditingActionsController(
             actions: config.editingActions,
-            rights: publication.rights
+            publication: publication
         )
         self.httpServer = httpServer
         self.publicationEndpoint = publicationEndpoint
